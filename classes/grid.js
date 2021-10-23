@@ -1,14 +1,14 @@
 /**
  * Class for the grid that descrive Mars.
  * 
- * The grid mustn't larger than 50x50 or smaller of 1x1.
+ * The grid mustn't be larger than 50x50 or smaller of 1x1.
  * 
  * The grid must record the orientation of a robot if it falls down.
  * 
  */
 export class Grid {
 
-  constructor(height, width) {
+  constructor(width, height) {
     // Check the bounds restriction and if it's violated max value is assigned
     if (height > 50 || height < 1) {
       this.height = 50;
@@ -23,12 +23,12 @@ export class Grid {
     }
     this.grid = [];
     // Fill the grid with no orientation
-    for (let i = 0; i < this.height; i++) {
-      for (let j = 0; j < this.width; j++) {
-        if( j == 0 ){
+    for (let i = 0; i < this.width; i++) {
+      for (let j = 0; j < this.height; j++) {
+        if (j == 0) {
           this.grid[i] = []
         }
-        this.grid[i][j] = 'X';
+        this.grid[i][j] = "";
       }
     }
   }
