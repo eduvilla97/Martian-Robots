@@ -8,18 +8,18 @@
  */
 export class Grid {
 
-  constructor(width, height) {
+  constructor(maxX, maxY) {
     // Check the bounds restriction and if it's violated max value is assigned
-    if (height > 50 || height < 1) {
+    if (maxY > 50 || maxY < 1) {
       this.height = 50;
     }
     else {
-      this.height = height;
+      this.height = maxY+1;
     }
-    if (width > 50 || width < 1) {
+    if (maxX > 50 || maxX < 1) {
       this.width = 50;
     } else {
-      this.width = width;
+      this.width = maxX+1;
     }
     this.grid = [];
     // Fill the grid with no orientation

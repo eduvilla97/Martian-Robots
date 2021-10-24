@@ -8,13 +8,13 @@ function gridBoundsTest() {
     let mars;
     mars = new Grid(-3, 10);
     console.assert(
-        (mars.height == 50 && mars.width == 10)
-        , "Problems in test 1 of gridBoundsTest, 50 10 was expected but received " + mars.height + " " + mars.width);
+        (mars.height == 50 && mars.width == 11)
+        , "Problems in test 1 of gridBoundsTest, 50 11 was expected but received " + mars.height + " " + mars.width);
 
     mars = new Grid(10, -3);
     console.assert(
-        (mars.height == 10 && mars.width == 50)
-        , "Problems in test 2 of gridBoundsTest, 10 50 was expected but received " + mars.height + " " + mars.width);
+        (mars.height == 11 && mars.width == 50)
+        , "Problems in test 2 of gridBoundsTest, 11 50 was expected but received " + mars.height + " " + mars.width);
 
     mars = new Grid(-2, -3);
     console.assert(
@@ -23,8 +23,8 @@ function gridBoundsTest() {
 
     mars = new Grid(1, 1);
     console.assert(
-        (mars.height == 1 && mars.width == 1)
-        , "Problems in test 4 of gridBoundsTest, 1 1 was expected but received " + mars.height + " " + mars.width);
+        (mars.height == 2 && mars.width == 2)
+        , "Problems in test 4 of gridBoundsTest, 2 2 was expected but received " + mars.height + " " + mars.width);
 
     mars = new Grid(100, 100);
     console.assert(
@@ -49,7 +49,6 @@ function robotsNeverFallAtTheSamePointAndOrientationTest() {
         robot2.xPos == -1 && robot2.yPos == -1
         , "Problems in test 2 of robotsNeverDropAtTheSamePointTest, Robot2 at (-1, -1) was expected but received Robot2 at (" + robot2.xPos + ", " + robot2.yPos + ")"
     );
-    console.log(mars.grid);
 }
 
 
