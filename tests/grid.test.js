@@ -8,12 +8,12 @@ function gridBoundsTest() {
     let mars;
     mars = new Grid(-3, 10);
     console.assert(
-        (mars.height == 50 && mars.width == 11)
+        (mars.width == 50 && mars.height == 11)
         , "Problems in test 1 of gridBoundsTest, 50 11 was expected but received " + mars.height + " " + mars.width);
 
     mars = new Grid(10, -3);
     console.assert(
-        (mars.height == 11 && mars.width == 50)
+        (mars.width == 11 && mars.height == 50)
         , "Problems in test 2 of gridBoundsTest, 11 50 was expected but received " + mars.height + " " + mars.width);
 
     mars = new Grid(-2, -3);
