@@ -13,12 +13,12 @@ a edge of the grid this is lost forever. Moreover if a robot is lost this one le
 robots to not fall at the same grid point. Then, if a robot will do the same action that make lost a robot previously,
  the robot will ignore this action and continue with its instructions.
 
-For robots descrioption, robot position consist of Cartesian coordinates and an orientation (north, west, east or south), and the
+For robots description, robot position consist of Cartesian coordinates and an orientation (north, west, east or south), and the
 actions it can do are:
 
 - Turn 90 degrees to the left.
 - Turn 90 degrees to the right.
-- Moves forward one grid point in the current orientation's direction maintaining the same orientation.
+- Moves forward one grid point in the current orientation direction maintaining the same orientation.
 
 This actions are represented by a string of letters "L", "R" and "F" (turn left, turn right and move forward) given
 in the input next to the initial position of the robot. Besides, the actions' string cannot be larger than 99 instructions.
@@ -91,12 +91,12 @@ And now you are out of the container and this one is stopped.
 
 ## Testing
 
-I also write some unit test following the TDD mindset, these ones are in the folder "tests".
+I also wrote some unit test following the TDD mindset, these ones are in the folder "tests".
 You can also run them following the nexts steps:
 
 1. Follow the steps 1-3 (included) of running instructions.
 
-2. Move to the test folder using:  
+2. Move to the tests' folder using:  
 cd tests
 
 ![image](https://user-images.githubusercontent.com/32673341/138679565-f705fc1d-59ba-4294-8a26-b1fc653d756a.png)
